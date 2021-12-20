@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;400;600&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 28%, 13%);
+  font-family: "Noto Sans Thai", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.main {
+  margin: 2em 6em;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 20px auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo > img {
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 8em;
+}
+
+nav ul li {
+  list-style: none;
+  font-weight: 200;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.first_section {
+  margin: 5rem auto;
+  max-width: 40%;
+  text-align: center;
+}
+
+.second_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.detail {
+  line-height: 2em;
+}
+
+.btn-primary {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  width: 13rem;
+  background: linear-gradient(
+    90deg,
+    hsl(176, 68%, 64%) 0%,
+    hsl(198, 60%, 50%) 100%
+  );
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
