@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: hsl(218, 28%, 13%);
+  background-color: hsl(219, 30%, 18%);
   font-family: "Noto Sans Thai", sans-serif;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -24,7 +24,7 @@ h1 {
 }
 
 .main {
-  margin: 2em 6em;
+  margin: 2em 0;
 }
 
 .container {
@@ -32,10 +32,16 @@ h1 {
   margin: 20px auto;
 }
 
+.bg-second {
+  background-color: hsl(218, 28%, 13%);
+  width: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 6rem;
 }
 
 nav .logo > img {
@@ -53,10 +59,22 @@ nav ul li {
   font-weight: 200;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .d-flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .gap-1 {
@@ -77,13 +95,37 @@ nav ul li {
   text-align: center;
 }
 
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 32%;
+}
+
 .second_section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 5rem;
+}
+
+.third_section {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.third_section h1 {
+  width: 50%;
 }
 
 .detail {
   line-height: 2em;
+}
+
+.line-h-5 {
+  line-height: 5em;
 }
 
 .btn-primary {
@@ -98,4 +140,26 @@ nav ul li {
   );
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+}
+
+.btn-link {
+  color: hsl(176, 68%, 64%);
+  text-underline-offset: 10px;
+  display: flex;
+  align-items: center;
+}
+.btn-link > img {
+  margin-left: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-70 {
+  width: 70%;
 }
